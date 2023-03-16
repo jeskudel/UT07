@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>FORMULARIO PARA PETICIONES INFORMACION</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./Ejer_01.css">
+  <script src="./Ejer01.js"></script>
+</head>
+
+<body>
+  <form action="" class="decor">
+    <div class="form-left-decoration"></div>
+    <div class="form-right-decoration"></div>
+    <div class="circle"></div>
+    <div class="form-inner">
+      <h1>PETICIONES INFORMACION ASINCRONA</h1>
+      <input type="text" id="url" placeholder="URL para realizar petición...">
+      <div id="opciones">
+        <p>Selecciona el tipo de peticiones a realizar (ten en cuenta si se aceptara para la URL seleccionada)</p>
+        <input type="radio" name="tipoPeticion" value="GET">GET<br>
+        <input type="radio" name="tipoPeticion" value="POST">POST<br>
+      </div>
+      <input type="text" id="atributos"
+        placeholder="Introduce atributos en formato 'atributo=valor' y si hay mas de unos separados por una coma ','">
+      <p> ReadyState:</p>
+      <input type="text" id="ReadyState" disabled>
+      <p> State:</p>
+      <input type="text" id="State" disabled>
+      <button type="submit" href="/">Realizar Petición</button>
+    </div>
+    <div class="form-inner">
+      <h1>RESULTADOS</h1>
+      <div id="resultados">
+
+      </div>
+    </div>
+  </form>
+</body>
+
+</html>
